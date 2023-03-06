@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0s;
+}
+
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url("../Fonts/OpenSans-SemiBold.ttf");
+}
+/*variables sass*/
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*navbar*/
+.nav-contenedor {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+}
+
+#nav-h1 {
+  font-size: 20px;
+  display: inline;
+}
+
+.div-logoTNG-nav {
+  display: inline;
+}
+
+.div-navbar {
+  display: inline;
+}
+
+/*fin navbar*/
+#banner-foto {
+  background-image: url(../Recursos/Imagenes/BannerWebTNG0\ -Renzo.jpg);
+  width: 100%;
+  height: 700px;
+  position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 100%;
+}
+
+.h2-Section {
+  background-color: black;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+}
+
+#section-2 {
+  background-color: black;
+}
+
+#footer {
+  background-color: black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: red;
+}
+
+ul {
+  list-style: none;
+}
+
+.relleno-section-escuchanos {
+  background-color: black;
+}
+
+.flex-container {
+  border: 1px solid black;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 10px;
+  height: 650px;
+  /*propiedades de la caja*/
+  /*activamosFlexbox*/
+  display: flex;
+  flex-direction: row;
+  flex: wrap;
+  justify-content: space-evenly;
+}
+
+.caja {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  margin: 5px;
+  color: black;
+  font-weight: bold;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.grid-container {
+  /* box modeling*/
+  width: 90%;
+  max-width: 1000px;
+  border: 10px solid black;
+  margin: auto;
+  height: 900px;
+  /*tipografia*/
+  font-size: 50px;
+  text-align: center;
+  /*activar grids*/
+  display: grid;
+  /*definimos la cantidad de columnas*/
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* grid por areas */
+#grilla {
+  display: grid;
+  grid-template-areas: "nav header    header" "nav productos publicidad" "nav servicios publicidad" "nav footer    footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 150px 1fr 75px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+#banner {
+  grid-area: header;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#productos {
+  grid-area: productos;
+  background-color: lightcoral;
+}
+
+#servicios {
+  grid-area: servicios;
+  background-color: red;
+}
+
+#navgrid {
+  grid-area: nav;
+  background-color: blueviolet;
+}
+
+aside {
+  grid-area: publicidad;
+  background-color: lightslategray;
+}
+
+footer {
+  grid-area: footer;
+  background-color: chocolate;
+}
+
+/*MediaQueris*/
+@media screen and (max-width: 480px) {
+  /* 
+      etiqueta{
+          background-color: otro color;
+      }
+  */
+}/*# sourceMappingURL=estilos.css.map */

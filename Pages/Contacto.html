@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Recursos/Logos/LogoTNG-negro-01.png" type="image/x-icon">
+    <title>Tng Estudio</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-contenedor"> 
+            <h1 id="nav-h1">TNG ESTUDIO</h1>
+                <div class="div-logoTNG-nav">
+                    <img src="../Recursos/Logos/LogoTNG-blanco.png" alt="logo-tng-blanco"  width="40px" >
+                </div>
+            <!--Enlaces Relativos-->
+            <div class="div-navbar">
+                <a href="../index.html">Home</a>
+                <a href="./Escucha.html">Escucha</a>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./Live Sessions.html">Live Sessions</a>
+                <a href="#">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+        <h1> TNG ESTUDIO </h1>
+
+        <h3>Contacto</h3>
+            <!--Listas Desordenadas-->
+    <h3>Servicios</h3>
+    <ul>
+        <li>Produccion</li>
+        <li>Mezcla</li>
+        <li>Mastering</li>
+        <li>Video</li>
+    </ul>
+    
+    <!--Contactanos-->
+    <h3>Contactanos</h3>
+    
+    <action="procesar.php" method="get">
+    
+        <p>
+        <label for="nombre">Ingrese su nombre: </label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        </p>
+    
+        <p>
+        <label for="apellido">Ingrese su Apellido:</label>
+        <input type="text" name="apellido" placeholder="Ingrese su apellido">
+        </p>
+        <p>
+            <label for="mail"> Ingrese su correo electronico </label>
+            <input type="text" name="email" placeholder="tucorreo@gmail.com">   
+        </p>
+    <p>
+    <label for="pass">Ingrese su contraseña</label>
+    <input type="password" name="pass" placeholder="Ingrese su contraseña">
+    </p>
+    <p>
+        <h3>¿Por que servicio consulta?</h3>
+    
+        <label for="servicio">Mezcla</label>
+        <input type="radio" name="servicio" value="01">
+    
+        <label for="servicio">Mastering</label>
+        <input type="radio" name="servicio" value="01">
+    
+        <label for="servicio">Produccion</label>
+        <input type="radio" name="servicio" value="01">
+    </p>
+    
+    <h3> ¿Como se conforma tu proyecto?</h3>
+    
+    <label for="cuestionario">Con pista</label>
+    <input type="checkbox" name="¿con pista?" value="Con pista">
+    
+    <label for="cuestionario">Set Acustico</label>
+    <input type="checkbox" name="¿Set acustico?" value="Set Acustico">
+    
+    <label for="cuestionario">Banda Completa</label>
+    <input type="checkbox" name="¿Banda Completa?" value="Banda Completa">
+    
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar Formulario</button>
+    
+    <!--Menu Desplegable-->
+    <h3>Elija Cantidad de Canciones</h3>
+    <p><select name="" id="">
+        <option value="01">1 Canciones</option>
+        <option value="02">2 Canciones</option>
+        <option value="03">3 Canciones</option>
+        <option value="04">4 Canciones</option>
+        <option value="05">5 Canciones</option>
+        <option value="06">6 Canciones</option>
+        <option value="07">7 Canciones</option>
+        <option value="08">8 Canciones</option>
+        <option value="09">9 Canciones</option>
+        <option value="10">10 Canciones</option>
+    </select></p>
+    
+    
+    <!--Textarea-->
+    <h3>Dejanos tu comentario</h3>
+    <textarea name="Textarea" id="" cols="30" rows="10"></textarea>
+    </form>
+    
+    </body>
+</html>
