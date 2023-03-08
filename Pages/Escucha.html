@@ -1,43 +1,95 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Recursos/Logos/LogoTNG-negro-01.png" type="image/x-icon">
-    <title>Tng Estudio</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
+  <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../Recursos/Logos/LogoTNG-negro-01.png" type="image/x-icon">
+        <title>Tng Estudio</title>
+        <link rel="stylesheet" href="../Libs/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
 <body>
-    <header>
-        <nav class="nav-contenedor"> 
-            <h1 id="nav-h1">TNG ESTUDIO</h1>
-                <div class="div-logoTNG-nav">
-                    <img src="../Recursos/Logos/LogoTNG-blanco.png" alt="logo-tng-blanco"  width="40px" >
-                </div>
-            <!--Enlaces Relativos-->
-            <div class="div-navbar">
-                <a href="../index.html">Home</a>
-                <a href="#">Escucha</a>
-                <a href="./nosotros.html">Nosotros</a>
-                <a href="./Live Sessions.html">Live Sessions</a>
-                <a href="./Contacto.html">Contacto</a>
-            </div>
-        </nav>
-    </header>
+    <main>
 
-<section class="relleno-section-escuchanos">
+  <!--navbar bootstrap-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0a8899;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">
+        <img src="../Recursos/Logos/LogoTNG-blanco.png" alt="logo-tng" width="50">
+      </a>
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Escucha</a></li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="../Pages/Nosotros.html">Nosotros</a></li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="../Pages/live sessions.html">Tng Sessions</a></li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="../Pages/Contacto.html">Contactos</a></li>
+    </div>
+  </div>
+</nav>
+
+<section class="background-color-general reproductor-spotify">
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4qyQ2n0jgZe7QngO4440ZN?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bp4TJA-hs5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 
+	<!--Grid Responsive-->
+    <article class="background-color-general">
+        <h3 class="titulo-3">Nuestros Servicios</h3>
+    
+          <div class="container d-flex justify-content-center">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <img src="../Recursos/Imagenes/cantante03.PNG" class="card-img-top" alt="foto-cantante">
+                    <div class="card-body">
+                      <h5 class="card-title">Grabacion</h5>
+                      <p class="card-text">Contamos con equipamiento para grabar tu música en la mejor calidad.</p>
+                    </div>
+                  </div>
+                </div>
+                  
+      
+                  
+              <div class="col">
+                <div class="card">
+                  <img src="../Recursos/Imagenes/mixer01.JPG" class="card-img-top" alt="foto-mixer">
+                  <div class="card-body">
+                    <h5 class="card-title">Mezcla</h5>
+                    <p class="card-text">Contamos con equipos analogicos para procesos y los mejores procesadores digitales para tus canciones.</p>
+                  </div>
+                </div>
+                  </div>
+      
+      
+                      <div class="col">
+                <div class="card">
+                  <img src="../Recursos/Imagenes/mastering-p.jpg" class="card-img-top" alt="foto-plugins-mastering">
+                  <div class="card-body">
+                    <h5 class="card-title">Mastering</h5>
+                    <p class="card-text">Contamos en su mayoria con plugines digitales de ultima generacion para mastering.Tambien contamos con equipos analogicos para bus compresing y ecualizacion.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+      </article>
 
-<footer id="footer">
-    <p>todos los derechos reservados</p>
-    <p>telefono</p>
-    <p>e-mail</p>
-    <p>Instagram</p>
-</footer>
-
+    <footer class="background-color-general" id="footer">
+        <h3>Contactanos:</h3>
+        <p>telefono</p>
+        <p>e-mail</p>
+        <p>Instagram</p>
+    </footer>
+    <script src="./Libs/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Recursos/Logos/LogoTNG-negro-01.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Recursos/Logos/LogoTNG-negro-01.png" type="image/x-icon">
     <title>Tng Estudio</title>
+    <link rel="stylesheet" href="../Libs/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
-        <nav class="nav-contenedor"> 
-            <h1 id="nav-h1">TNG ESTUDIO</h1>
-                <div class="div-logoTNG-nav">
-                    <img src="../Recursos/Logos/LogoTNG-blanco.png" alt="logo-tng-blanco"  width="40px" >
-                </div>
-            <!--Enlaces Relativos-->
-            <div class="div-navbar">
-                <a href="../index.html">Home</a>
-                <a href="./Escucha.html">Escucha</a>
-                <a href="./nosotros.html">Nosotros</a>
-                <a href="./Live Sessions.html">Live Sessions</a>
-                <a href="#">Contacto</a>
+        <main>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0a8899;">
+              <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                  <img src="../recursos/Logos/LogoTNG-blanco.png" alt="logo-tng" width="50">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Escucha</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../Pages/nosotros.html">Nosotros</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../Pages/live sessions.html">Tng Sessions</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../Pages/Contacto.html">Contactos</a></li>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
 
-        <h1> TNG ESTUDIO </h1>
+        <h1> Tng Estudio </h1>
 
         <h3>Contacto</h3>
             <!--Listas Desordenadas-->
@@ -108,5 +119,17 @@
     <textarea name="Textarea" id="" cols="30" rows="10"></textarea>
     </form>
     
-    </body>
+        </body>
+    </main>
+</html>
+
+
+<footer class="background-color-general" id="footer">
+    <h3>Contactanos:</h3>
+    <p>telefono</p>
+    <p>e-mail</p>
+    <p>Instagram</p>
+</footer>
+<script src="./Libs/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
