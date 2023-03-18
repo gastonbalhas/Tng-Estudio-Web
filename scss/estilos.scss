@@ -1,20 +1,70 @@
-@import "fuentes"
-@import "fondos"
-@import "navbar"
+/* modificaciones generales*/
 
-*{
-    margin: 0;
-    padding: 0s
-}
-@font-face {
-    font-family: 'Open Sans', sans-serif;
-    src: url("../Fonts/OpenSans-SemiBold.ttf");
+.reproductor-spotify {
+display: flex;
+justify-content: center;
 }
 
-/*variables sass*/
-$color-text: red;
+.reproductor-youtube {
+display: flex;
+justify-content: center;
+}
 
-/*variables globales*/
+.titulo-3 {
+text-align: center;
+color: white;
+padding: 30px;
+margin: auto;
+}
 
-$tipografia-primaria:
-$tipografia-secundaria:
+article {
+color: white;
+}
+
+footer {
+text-align: center;
+color: white;
+padding: 10px;
+}
+
+.texto-claro{
+    color:white
+}
+
+.formularios-estilo{
+    display: flex;
+    justify-content: start;
+}
+
+/*mod bootstrap*/
+
+.navbar {
+padding: 2rem;
+}
+
+.navbar-collapse {
+justify-content: space-between;
+align-items: center;
+}
+
+.card {
+display: inline;
+}
+
+/*Boostrap responsive*/
+@media screen and (max-width: 992px) {
+.navbar-brand {
+    display: none;
+    }
+}
+/*MediaQueries*/
+
+/*Gradientes y animaciones*/
+
+.nav-modificado{
+    background-image: linear-gradient(to right,#0F2027,#203A43,#2C5364);
+}
+
+.gradient-color-general{
+    background-image: linear-gradient(to right,#0F2027,#203A43,#2C5364); 
+}

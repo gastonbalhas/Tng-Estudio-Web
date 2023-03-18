@@ -1,57 +1,51 @@
-
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("../Fonts/OpenSans-SemiBold.ttf");
-}
-/*variables sass*/
-
 /* modificaciones generales*/
-.background-color-general{
-background-color: #0a8899 ;
-}
-
-.reproductor-spotify{
-display: flex;
-justify-content: center;
-}
-
-.reproductor-youtube{
+.reproductor-spotify {
   display: flex;
   justify-content: center;
-  }
+}
 
+.reproductor-youtube {
+  display: flex;
+  justify-content: center;
+}
 
-.titulo-3{
+.titulo-3 {
   text-align: center;
   color: white;
-  padding: 10px;
+  padding: 30px;
   margin: auto;
-  }
+}
 
+article {
+  color: white;
+}
 
-  article{
-    color: white;
-  }
-
-footer{
+footer {
   text-align: center;
   color: white;
   padding: 10px;
+}
+
+.texto-claro {
+  color: white;
+}
+
+.formularios-estilo {
+  display: flex;
+  justify-content: start;
 }
 
 /*mod bootstrap*/
-
-.navbar{
-  padding:2rem;
-
+.navbar {
+  padding: 2rem;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   justify-content: space-between;
   align-items: center;
 }
 
-.card{
+.card {
   display: inline;
 }
 
@@ -62,3 +56,11 @@ footer{
   }
 }
 /*MediaQueries*/
+/*Gradientes y animaciones*/
+.nav-modificado {
+  background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+}
+
+.gradient-color-general {
+  background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+}
