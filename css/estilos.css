@@ -49,6 +49,38 @@ footer {
   display: inline;
 }
 
+/*probando hover en nav*/
+.scale-text:hover {
+  background-color: rgba(255, 255, 255, 0.742);
+  color: #203A43;
+  transform: scale(1.2, 1.2);
+}
+
+/*animaciones*/
+.logo-tng {
+  animation-name: logo-tng;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+}
+
+@keyframes logo-tng {
+  0% {
+    translate: -500px;
+  }
+  50% {
+    translate: -250px;
+  }
+  75% {
+    translate: 50px;
+  }
+  90% {
+    translate: -50px;
+  }
+  100% {
+    translate: 0px;
+  }
+}
 /*Boostrap responsive*/
 @media screen and (max-width: 992px) {
   .navbar-brand {
