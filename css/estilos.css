@@ -1,3 +1,4 @@
+/*Gradientes y animaciones*/
 /* modificaciones generales*/
 .reproductor-spotify {
   display: flex;
@@ -89,10 +90,11 @@ footer {
 }
 /*MediaQueries*/
 /*Gradientes y animaciones*/
-.nav-modificado {
-  background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+/*Import*/
+/*Extend*/
+.nav-modificado, .gradient-color-general {
+  background-image: to right, #0F2027, #203A43, #2C5364;
 }
 
-.gradient-color-general {
-  background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
-}
+/*variables*/
+/*mapas*/

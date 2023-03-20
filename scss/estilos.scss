@@ -1,3 +1,5 @@
+@import "fondos";
+
 /* modificaciones generales*/
 
 .reproductor-spotify {
@@ -100,11 +102,23 @@ display: inline;
 /*MediaQueries*/
 
 /*Gradientes y animaciones*/
+/*Import*/
+/*Extend*/
 
 .nav-modificado{
-    background-image: linear-gradient(to right,#0F2027,#203A43,#2C5364);
+    background-image:$gradient-color-general;
+}
+    
+.gradient-color-general{
+    @extend .nav-modificado;
 }
 
-.gradient-color-general{
-    background-image: linear-gradient(to right,#0F2027,#203A43,#2C5364); 
-}
+// /*Mixing*/
+// @mixin crearbordes($colorBorde,$size,$shadow){
+//     border: 5px solid black;
+//     border-radius: 10px;
+//     box-shadow: 0px 0px 12px black
+// } ;
+
+/*variables*/
+/*mapas*/
