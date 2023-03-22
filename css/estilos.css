@@ -1,4 +1,5 @@
 /*Gradientes y animaciones*/
+/*mapas*/
 /* modificaciones generales*/
 .reproductor-spotify {
   display: flex;
@@ -12,48 +13,46 @@
 
 .titulo-3 {
   text-align: center;
-  color: white;
+  color: whitesmoke;
   padding: 30px;
-  margin: auto;
 }
 
-article {
-  color: white;
+.article-padding {
+  padding-bottom: 50px;
 }
 
-footer {
+.contenido-footer {
   text-align: center;
-  color: white;
-  padding: 10px;
+  padding: 30px;
+  color: whitesmoke;
 }
 
-.texto-claro {
-  color: white;
+.iconos-footer {
+  width: 20px;
+  filter: invert(100%);
+}
+
+.parrafos-nosotros {
+  padding: 30px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
 }
 
 .formularios-estilo {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  padding: 30px;
 }
 
 /*mod bootstrap*/
 .navbar {
   padding: 2rem;
+  font-size: 14px;
 }
 
-.navbar-collapse {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.card {
-  display: inline;
-}
-
-/*probando hover en nav*/
+/*hover en nav*/
 .scale-text:hover {
-  background-color: rgba(255, 255, 255, 0.742);
-  color: #203A43;
   transform: scale(1.2, 1.2);
 }
 
@@ -83,18 +82,22 @@ footer {
   }
 }
 /*Boostrap responsive*/
-@media screen and (max-width: 992px) {
+/*Mediaqueries*/
+@media screen and (min-width: 992px) {
   .navbar-brand {
     display: none;
   }
 }
-/*MediaQueries*/
 /*Gradientes y animaciones*/
 /*Import*/
 /*Extend*/
-.nav-modificado, .gradient-color-general {
-  background-image: to right, #0F2027, #203A43, #2C5364;
+.gradient-color-general {
+  background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
 }
 
-/*variables*/
-/*mapas*/
+.card-mod {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.823);
+  text-align: center;
+  background-image: linear-gradient(to right, #1a3946, #305764, #38687d);
+}

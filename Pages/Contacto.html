@@ -13,15 +13,18 @@
 </head>
 <body>
   <main>
-      <nav class="navbar navbar-expand-lg navbar-dark nav-modificado" style="background-color: #0a8899;">
-              <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">
-                  <img class="logo-tng" src="../recursos/Logos/LogoTNG-blanco.png" alt="logo-tng" width="50">
-                </a>
+    <nav class="gradient-color-general navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+
+        <img class="logo-tng" src="../Recursos/Logos/LogoTNG-blanco.png" alt="logo-tng" width="50">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon  d-flex justify-content-center"></span>
+          </button>
+
+      <div class="collapse navbar-collapse f-flex justify-content-end" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"></a>
+
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                   <li class="nav-item">
                     <a class="nav-link active scale-text" aria-current="page" href="../index.html">Inicio</a></li>
@@ -55,20 +58,11 @@
       <input type="text" name="nombre" placeholder="Ingrese su nombre">
       </p>
   
-      <p>
-      <label for="apellido">Ingrese su Apellido:</label>
-      <input type="text" name="apellido" placeholder="Ingrese su apellido">
-      </p>
-      <p>
           <label for="mail"> Ingrese su correo electronico </label>
           <input type="text" name="email" placeholder="tucorreo@gmail.com">   
       </p>
   <p>
-  <label for="pass">Ingrese su contraseña</label>
-  <input type="password" name="pass" placeholder="Ingrese su contraseña">
-  </p>
-  <p>
-      <h3>¿Por que servicio consulta?</h3>
+      <h5>¿Por que servicio consulta?</h5>
   
       <label for="servicio">Mezcla</label>
       <input type="radio" name="servicio" value="01">
@@ -80,22 +74,11 @@
       <input type="radio" name="servicio" value="01">
   </p>
   
-  <h3> ¿Como se conforma tu proyecto?</h3>
-  
-  <label for="cuestionario">Con pista</label>
-  <input type="checkbox" name="¿con pista?" value="Con pista">
-  
-  <label for="cuestionario">Set Acustico</label>
-  <input type="checkbox" name="¿Set acustico?" value="Set Acustico">
-  
-  <label for="cuestionario">Banda Completa</label>
-  <input type="checkbox" name="¿Banda Completa?" value="Banda Completa">
-  
   <button type="submit">Enviar</button>
   <button type="reset">Borrar Formulario</button>
   
   <!--Menu Desplegable-->
-  <h3>Elija Cantidad de Canciones</h3>
+  <h5>Cantidad de Tracks?</h5>
   <p><select name="" id="">
       <option value="01">1 Canciones</option>
       <option value="02">2 Canciones</option>
@@ -111,7 +94,7 @@
   
   
   <!--Textarea-->
-  <h3>Dejanos tu comentario</h3>
+  <h5>Dejanos tu comentario</h5>
   <textarea name="Textarea" id="" cols="30" rows="10"></textarea>
   </form>
     </section>

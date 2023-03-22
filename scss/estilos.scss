@@ -1,4 +1,5 @@
 @import "fondos";
+@import "cards";
 
 /* modificaciones generales*/
 
@@ -14,64 +15,63 @@ justify-content: center;
 
 .titulo-3 {
 text-align: center;
-color: white;
-padding: 30px;
-margin: auto;
+color: whitesmoke;
+padding: 30px
 }
 
-article {
-color: white;
+.article-padding{
+    padding-bottom: 50px;
 }
 
-footer {
-text-align: center;
-color: white;
-padding: 10px;
+
+.contenido-footer{
+    text-align: center;
+    padding: 30px;
+    color: whitesmoke;
 }
 
-.texto-claro{
-    color:white
+
+
+.iconos-footer{
+    width: 20px;
+    filter: invert(100%)
+    
+}
+
+.parrafos-nosotros{
+    padding: 30px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 
 .formularios-estilo{
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    padding: 30px;
+
 }
 
 /*mod bootstrap*/
 
 .navbar {
 padding: 2rem;
+font-size: 14px;
 }
 
-.navbar-collapse {
-justify-content: space-between;
-align-items: center;
-}
-
-.card {
-display: inline;
-}
-
-/*probando hover en nav*/
-
-.scale-text{
-
-}
+/*hover en nav*/
 
 .scale-text:hover{
-    background-color: rgba(255, 255, 255, 0.742);
-    color: #203A43;
-    transform:scale(1.2,1.2 );
+    transform:scale(1.2,1.2);
     }
-
+    
 /*animaciones*/
 .logo-tng{
     animation-name: logo-tng;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-duration: 0.5s;
-
+    
 }
 
 @keyframes logo-tng {
@@ -94,31 +94,25 @@ display: inline;
 
 
 /*Boostrap responsive*/
-@media screen and (max-width: 992px) {
-.navbar-brand {
+/*Mediaqueries*/
+
+@media screen and (min-width: 992px) {
+.navbar-brand{
     display: none;
     }
 }
-/*MediaQueries*/
+
 
 /*Gradientes y animaciones*/
 /*Import*/
 /*Extend*/
-
-.nav-modificado{
-    background-image:$gradient-color-general;
-}
-    
 .gradient-color-general{
-    @extend .nav-modificado;
+    background-image:linear-gradient($gradient-color-general)
 }
 
-// /*Mixing*/
-// @mixin crearbordes($colorBorde,$size,$shadow){
-//     border: 5px solid black;
-//     border-radius: 10px;
-//     box-shadow: 0px 0px 12px black
-// } ;
-
-/*variables*/
-/*mapas*/
+.card-mod{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.823);
+    text-align: center;
+    background-image:linear-gradient($gradient-color-cards)
+}

@@ -14,16 +14,22 @@
 <body>
   
     <main>
+
       <!--navbar bootstrap-->
-        <nav class="gradient-color-general navbar navbar-expand-lg navbar-dark"  style="background-color: #0a8899;">
+      <!--nav tng-->
+
+        <nav class="gradient-color-general navbar navbar-expand-lg navbar-dark">
           <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-              <img class="logo-tng" src="./Recursos/Logos/LogoTNG-blanco.png" alt="logo-tng" width="50">
-            </a>
+
+            <img class="logo-tng" src="./Recursos/Logos/LogoTNG-blanco.png" alt="logo-tng" width="50">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon  d-flex justify-content-center"></span>
+              </button>
+
+          <div class="collapse navbar-collapse f-flex justify-content-end" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"></a>
+            
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
                 <a class="nav-link active scale-text" aria-current="page" href="#">Inicio</a></li>
@@ -44,13 +50,13 @@
   <div id="carouselExampleFade" class="carousel slide carousel-fade"> 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./Recursos/Imagenes/banner3gear.png" class="d-block w-100" alt="imagen-cantante">
+      <img src="./Recursos/Imagenes/banner1500-mic.png" class="d-block w-100" alt="imagen-microfono">
     </div>
     <div class="carousel-item">
-      <img src="./Recursos/Imagenes/banner2-percu.png" class="d-block w-100" alt="imagen-cantante-2">
+      <img src="./Recursos/Imagenes/banner1500-Gear.png" class="d-block w-100" alt="imagen-equipos">
     </div>
     <div class="carousel-item">
-      <img src="./Recursos/Imagenes/banner1renzo.png" class="d-block w-100" alt="imagen-cantante-3">
+      <img src="./Recursos/Imagenes/banner1500-mixer.png" class="d-block w-100" alt="imagen-mixer">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -69,16 +75,18 @@
 	<!--Grid Responsive
   Seccion de Servicios -->
 
-<article class="gradient-color-general">
+<article class="gradient-color-general article-padding">
   <h3 class="titulo-3">Nuestros Servicios</h3>
-	<div class="container d-flex justify-content-center">
+	<div class="container ">
 		<div class="row">
-          <div class="col">
-            <div class="card">
-              <img src="./Recursos/Imagenes/cantante03.PNG" class="card-img-top" alt="foto-cantante">
-              <div class="card-body">
-                <h5 class="card-title">Grabacion</h5>
-                <p class="card-text">Contamos con equipamiento para grabar tu música en la mejor calidad.</p>
+
+          <div class="col ">
+
+            <div class="card card-mod">
+              <img src="./Recursos/Imagenes/card-cantante03.PNG" class="card-img-top" alt="foto-cantante">
+              <div class="card-body ">
+                <h5 class="card-title ">Grabacion</h5>
+                <p class="card-text ">Contamos con equipamiento para grabar tu música en la mejor calidad.</p>
               </div>
             </div>
           </div>
@@ -86,8 +94,8 @@
 
 			
         <div class="col">
-          <div class="card">
-            <img src="./Recursos/Imagenes/mixer01.JPG" class="card-img-top" alt="foto-mixer">
+          <div class="card card-mod">
+            <img src="./Recursos/Imagenes/card-controlmezcla.png" class="card-img-top" alt="foto-mixer">
             <div class="card-body">
               <h5 class="card-title">Mezcla</h5>
               <p class="card-text">Contamos con equipos analogicos para procesos y los mejores procesadores digitales para tus canciones.</p>
@@ -97,11 +105,11 @@
 
 
 				<div class="col">
-          <div class="card">
-            <img src="./Recursos/Imagenes/mastering-p.jpg" class="card-img-top" alt="foto-plugins-mastering">
+          <div class="card card-mod">
+            <img src="./Recursos/Imagenes/card-buscompressor.png" class="card-img-top" alt="foto-plugins-mastering">
             <div class="card-body">
               <h5 class="card-title">Mastering</h5>
-              <p class="card-text">Contamos en su mayoria con plugines digitales de ultima generacion para mastering.Tambien contamos con equipos analogicos para bus compresing y ecualizacion.</p>
+              <p class="card-text">Contamos con equipos analogicos y la ultima generacion de plugins digitales para mastering.</p>
             </div>
           </div>
         </div>
@@ -109,12 +117,20 @@
 	</div>
 </article>
 
-    <footer class="gradient-color-general" id="footer">
-        <h3>Contactanos:</h3>
-        <p>telefono</p>
-        <p>e-mail</p>
-        <p>Instagram</p>
-    </footer>
+<!--footer-->
+
+<footer class="gradient-color-general">
+  <div class="card card-mod">
+    <div class="card-body">
+      <h5 class="card-title">Contacto:</h5>
+      <div class="contenido-footer ">
+        <p> <img class= "iconos-footer" src="./Recursos/Logos/whatsapp.png" class="card-img-top" alt="icono-whatsapp"> 1549362597</p>
+        <p><img class= "iconos-footer" src="./Recursos/Logos/email.png" class="card-img-top" alt="icono-email"> tngestudioarg@gmail.com</p>
+        <p><img class= "iconos-footer" src="./Recursos/Logos/instagram.png" class="card-img-top" alt="icono-instagram"> @tng.estudio</p>
+      </div>
+  </div>
+</footer>
+
     <script src="./Libs/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
