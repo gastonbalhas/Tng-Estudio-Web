@@ -1,5 +1,15 @@
+
 @import "fondos";
 @import "cards";
+
+/*Mapas*/
+
+$estilos: (
+color: rgba(245, 245, 245, 0.819),
+center: center,
+tFuente: 12px
+);
+
 
 /* modificaciones generales*/
 
@@ -8,14 +18,13 @@ display: flex;
 justify-content: center;
 }
 
-.reproductor-youtube {
-display: flex;
-justify-content: center;
+.tamaño-videos{
+    height: 600px;
 }
 
 .titulo-3 {
 text-align: center;
-color: whitesmoke;
+color: map-get($map: $estilos, $key:color);
 padding: 30px
 }
 
@@ -27,10 +36,9 @@ padding: 30px
 .contenido-footer{
     text-align: center;
     padding: 30px;
-    color: whitesmoke;
+    color: map-get($map: $estilos, $key:color);
+
 }
-
-
 
 .iconos-footer{
     width: 20px;
@@ -40,7 +48,7 @@ padding: 30px
 
 .parrafos-nosotros{
     padding: 30px;
-    color: whitesmoke;
+    color: map-get($map: $estilos, $key:color);
     display: flex;
     justify-content: center;
 }
@@ -57,12 +65,15 @@ padding: 30px
 .navbar {
 padding: 2rem;
 font-size: 14px;
+color: map-get($map: $estilos, $key:color);
 }
 
 /*hover en nav*/
 
 .scale-text:hover{
     transform:scale(1.2,1.2);
+    color: black;
+    background-color: rgba(9, 30, 38, 0.644);
     }
     
 /*animaciones*/
@@ -111,8 +122,24 @@ font-size: 14px;
 }
 
 .card-mod{
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.823);
-    text-align: center;
+    font-size: 12px;
+    color: map-get($map: $estilos, $key:color);
+    background-image:linear-gradient($gradient-color-cards);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card-mod:hover{
+    transform:scale(1.2,1.2);
+}
+
+.footer-mod{
+    font-size: 12px;
+    color: map-get($map: $estilos, $key:color);
     background-image:linear-gradient($gradient-color-cards)
+}
+    
+.footer-title{
+    @extend .titulo-3;
 }
