@@ -40,72 +40,35 @@
             </div>
           </nav>
 
+    <!--Formularios de Contacto boostrap-->
 
-      <!--Titulo y Parrafo de Nosotros-->
+    <div class="gradient-color-general">
+      <form class="form-estilo">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        
+        <label for="exampleInputEmail1" class="form-label">Escribinos</label> <br>
+        <textarea name="Textarea" class="form-label" cols="80" rows="20"></textarea>
+  
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
-      
-      <article class="gradient-color-general titulo-3 ">
-      <h2>Contactanos!</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, eaque rem laudantium neque similique natus enim obcaecati totam a architecto voluptate cumque dignissimos nam quo rerum placeat praesentium labore repellendus!
-      </p>
-
-    <!--Formularios de Contacto-->
-    <section class="formularios-estilo">
-      <action="procesar.php" method="get">
+    </div>
     
-      <p>
-      <label for="nombre">Ingrese su nombre: </label>
-      <input type="text" name="nombre" placeholder="Ingrese su nombre">
-      </p>
-  
-          <label for="mail"> Ingrese su correo electronico </label>
-          <input type="text" name="email" placeholder="tucorreo@gmail.com">   
-      </p>
-  <p>
-      <h5>¿Por que servicio consulta?</h5>
-  
-      <label for="servicio">Mezcla</label>
-      <input type="radio" name="servicio" value="01">
-  
-      <label for="servicio">Mastering</label>
-      <input type="radio" name="servicio" value="01">
-  
-      <label for="servicio">Produccion</label>
-      <input type="radio" name="servicio" value="01">
-  </p>
-  
-  <button type="submit">Enviar</button>
-  <button type="reset">Borrar Formulario</button>
-  
-  <!--Menu Desplegable-->
-  <h5>Cantidad de Tracks?</h5>
-  <p><select name="" id="">
-      <option value="01">1 Canciones</option>
-      <option value="02">2 Canciones</option>
-      <option value="03">3 Canciones</option>
-      <option value="04">4 Canciones</option>
-      <option value="05">5 Canciones</option>
-      <option value="06">6 Canciones</option>
-      <option value="07">7 Canciones</option>
-      <option value="08">8 Canciones</option>
-      <option value="09">9 Canciones</option>
-      <option value="10">10 Canciones</option>
-  </select></p>
-  
-  
-  <!--Textarea-->
-  <h5>Dejanos tu comentario</h5>
-  <textarea name="Textarea" id="" cols="30" rows="10"></textarea>
-  </form>
-    </section>
-    
-    
-
 </main>
+
 <!--footer-->
   
-<footer class="gradient-color-general">
-  <div class="card card-mod">
+<footer class="gradient-color-footer">
+  <div class="card footer-mod gradient-color-footer">
     <div class="card-body">
       <h5 class="footer-title">Contacto:</h5>
       <div class="contenido-footer ">
@@ -115,7 +78,6 @@
       </div>
   </div>
 </footer>
-
     <script src="../Libs/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

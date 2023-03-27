@@ -68,6 +68,21 @@ font-size: 14px;
 color: map-get($map: $estilos, $key:color);
 }
 
+.scale-contacto{
+    width: 400px;
+;
+
+}
+
+.form-estilo{
+    color: whitesmoke;
+    background-image:linear-gradient($gradient-color-general);
+    padding: 10px;
+    margin: auto;
+    scale: 0.9;
+}
+
+
 /*hover en nav*/
 
 .scale-text:hover{
@@ -121,6 +136,11 @@ color: map-get($map: $estilos, $key:color);
     background-image:linear-gradient($gradient-color-general)
 }
 
+.gradient-color-footer{
+    background-image:linear-gradient($gradient-color-footer)
+}
+
+
 .card-mod{
     font-size: 12px;
     color: map-get($map: $estilos, $key:color);
@@ -137,9 +157,12 @@ color: map-get($map: $estilos, $key:color);
 .footer-mod{
     font-size: 12px;
     color: map-get($map: $estilos, $key:color);
-    background-image:linear-gradient($gradient-color-cards)
+    background-image:linear-gradient(gradient-color-footer);
 }
     
 .footer-title{
-    @extend .titulo-3;
+    display: flex;
+    justify-content: center;
+
+    padding: 15px;
 }
