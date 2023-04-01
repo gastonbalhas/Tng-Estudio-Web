@@ -1,17 +1,40 @@
-@charset "UTF-8";
 /*Gradientes y animaciones*/
-/*mapas*/ /*Mapas*/
+/*mapas*/
+@font-face {
+  font-family: "Monument";
+  src: url(../Fonts/MonumentExtended-Ultrabold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+/*Mapas*/
 /* modificaciones generales*/
 .reproductor-spotify {
   display: flex;
   justify-content: center;
 }
 
-.tamaño-videos {
-  height: 600px;
+.flex-videos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+}
+
+.fondo-h1 {
+  background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+  margin: auto;
+  padding: auto;
+}
+
+.titulo-1 {
+  font-family: "Monument";
+  text-align: center;
+  color: rgba(245, 245, 245, 0.819);
+  padding: 30px;
 }
 
 .titulo-3 {
+  font-family: "Monument";
   text-align: center;
   color: rgba(245, 245, 245, 0.819);
   padding: 30px;
@@ -22,6 +45,7 @@
 }
 
 .contenido-footer {
+  font-family: "Monument";
   text-align: center;
   padding: 30px;
   color: rgba(245, 245, 245, 0.819);
@@ -37,19 +61,19 @@
   color: rgba(245, 245, 245, 0.819);
   display: flex;
   justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.formularios-estilo {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
+.background-image1 {
+  background-image: url(../Recursos/Imagenes/banner-mixer01.png);
 }
 
 /*mod bootstrap*/
 .navbar {
   padding: 2rem;
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(245, 245, 245, 0.819);
+  font-family: "Monument";
 }
 
 .scale-contacto {
@@ -66,9 +90,7 @@
 
 /*hover en nav*/
 .scale-text:hover {
-  transform: scale(1.2, 1.2);
-  color: black;
-  background-color: rgba(9, 30, 38, 0.644);
+  transform: scale(1.1, 1.1);
 }
 
 /*animaciones*/
@@ -136,4 +158,5 @@
   display: flex;
   justify-content: center;
   padding: 15px;
+  font-family: "Monument";
 }

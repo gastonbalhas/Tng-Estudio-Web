@@ -2,6 +2,13 @@
 @import "fondos";
 @import "cards";
 
+@font-face{
+    font-family:'Monument';
+    src: url(../Fonts/MonumentExtended-Ultrabold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Mapas*/
 
 $estilos: (
@@ -18,14 +25,35 @@ display: flex;
 justify-content: center;
 }
 
-.tamaño-videos{
-    height: 600px;
+
+
+.flex-videos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+
+
 }
 
+.fondo-h1{
+    background-image:linear-gradient($gradient-color-general);
+    margin: auto;
+    padding: auto;
+}
+
+.titulo-1 {
+    font-family:'Monument';
+    text-align: center;
+    color: map-get($map: $estilos, $key:color);
+    padding: 30px
+    }
+
 .titulo-3 {
-text-align: center;
-color: map-get($map: $estilos, $key:color);
-padding: 30px
+    font-family:'Monument';
+    text-align: center;
+    color: map-get($map: $estilos, $key:color);
+    padding: 30px
 }
 
 .article-padding{
@@ -34,6 +62,7 @@ padding: 30px
 
 
 .contenido-footer{
+    font-family:'Monument';
     text-align: center;
     padding: 30px;
     color: map-get($map: $estilos, $key:color);
@@ -51,21 +80,21 @@ padding: 30px
     color: map-get($map: $estilos, $key:color);
     display: flex;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.formularios-estilo{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-
+.background-image1{
+background-image: url(../Recursos/Imagenes/banner-mixer01.png);
 }
 
 /*mod bootstrap*/
 
 .navbar {
 padding: 2rem;
-font-size: 14px;
+font-size: 16px;
 color: map-get($map: $estilos, $key:color);
+font-family:'Monument';
+
 }
 
 .scale-contacto{
@@ -86,9 +115,7 @@ color: map-get($map: $estilos, $key:color);
 /*hover en nav*/
 
 .scale-text:hover{
-    transform:scale(1.2,1.2);
-    color: black;
-    background-color: rgba(9, 30, 38, 0.644);
+    transform:scale(1.1,1.1);
     }
     
 /*animaciones*/
@@ -163,6 +190,6 @@ color: map-get($map: $estilos, $key:color);
 .footer-title{
     display: flex;
     justify-content: center;
-
     padding: 15px;
+    font-family:'Monument'; 
 }
